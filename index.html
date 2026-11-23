@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="skrypt.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="kolory">Hurtownia z najlepszymi cenami</h1>
+    </header>
+    <nav>
+        <label>kolorowanie naglowkow:</label>
+        <input type="button" value="red" onclick="czerwony()">
+        <input type="button" value="green" onclick="zielony()">
+        <input type="button" value="blue" onclick="niebieski()">
+        
+        <label>kolorowanie czcionki tabeli</label>
+        <input type="button" value="pomaranczowy" onclick="pomaranczowy()">
+        <input type="button" value="fioletowy" onclick="fioletowy()">
+        <input type="button" value="czarny" onclick="czarny()">
+    
+        <label>kolorowanie zawartosci tabeli</label>
+        <input type="button" value="czarno-bialy" onclick="czarno_bialy()">
+        <input type="button" value="zielono-zolty" onclick="zielono_zolty()">
+        <input type="button" value="fioletowo zielony" onclick="fioletowo_zielony()">
+
+    </nav>
+    <section>
+        <h2 class="kolory">Nasze ceny</h2>
+        <table>
+            <tr>
+                <td>zeszyt 60 kartek</td><td>4.5</td>
+            </tr>
+            <tr>
+                <td>zeszyt 32 kartki</td><td>1.2</td>
+            </tr>
+            <tr>
+                <td>cyrkiel</td><td>12.4</td>
+            </tr>
+            <tr>
+                <td>lnijka 30cm</td><td>7.2</td>
+            </tr>
+        </table>
+    </section>
+    <main>
+        <h2 class="kolory">Koszt zakupów</h2>
+        <br>
+        
+           
+            <label>wybierz artykuł</label>
+            <select id="co">
+                <option value="z60">zeszyt 60</option>
+                <option value="z32">zeszyt 32</option>
+                <option value="cyr">cyrkiel</option>
+                <option value="lni">lnijka</option>
+            </select>
+            <br>
+            <br>
+            <label>liczba sztuk</label>
+            <input type="number" id="cena">
+            <br>
+            <br>
+            <input type="button" value="oblicz" onclick="liczenie()">
+            <div id="wynik">wartosc:</div>
+        
+
+    </main>
+    <aside>
+        <h2 class="kolory">Kontakt</h2>
+        <img src="zakupy.png" alt="wozek">
+        <br>
+        <label>email:</label>
+        <a href="mailto:hurt@poczta2.pl">hurt@poczta2.pl</a>
+    </aside>
+    <footer>
+        <h3>Witryne wykonał: kacperooo-art </h3>
+        
+    </footer>
+    
+    
+</body>
+</html>
